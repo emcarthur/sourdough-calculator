@@ -1,5 +1,6 @@
 #https://dash-bootstrap-components.opensource.faculty.ai/docs
 #https://dash.plotly.com/dash-core-components/input
+#https://github.com/dcbark01/DashAppTemplate
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
@@ -9,6 +10,7 @@ from dash.dependencies import Input, Output
 
 app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
 
+server = app.server
 
 standalone_radio_check = html.Div(
     [
